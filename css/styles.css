@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--primary-color: #fcf5e9;
+--container-normal:1100px;
+--container-wide:1400px;
+--container-narrow:900px;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* utilities */
+.bg-primary{
+  background: var(--primary-color);
+}
+
+/* container */
+.container{
+  max-width: var(--container-normal);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.container-lg{
+  max-width: var(--container-wide);
+}
+.container-sm{
+  max-width:var(--container-narrow);
+}
+
+/* header */
+.header{
+  margin: 1.5rem auto;
+}
+.header .logo{
+  width: 130px;
+}
+.header .header-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .main-menu{
+  display: flex;
+  gap: 15px;
+}
+.header .main-menu a{
+  padding: .5rem 1rem;
+  border-radius: 2px;
+}
+.header .main-menu a:hover{
+  background: var(--primary-color);
+}
+.current{
+  background: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Hero */
+.hero{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h2{
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+/* gallery */
+.gallery-flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-item{
+  width: calc(33.3333% - 20px);
+  border-radius: 10px;
+}
+.gallery-item img{
+  border-radius: 10px;
+}
+.gallery-item:hover{
+  opacity: 0.9;
+}
+
+/* footer */
+.footer{
+  border-top: 1px solid #aaa;
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer img{
+  width: 120px;
+  height: 35px;
+}
+.footer h4{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.footer a{
+  margin: 0.2rem;
+}
+
+/* media queries */
+@media (max-width:768px) {
+  .header-flex, .footer-flex{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero{
+    height: 300px;
+  }
+  .hero h2{
+    font-size: 1.8rem;
+  }
+
+  .gallery-item{
+    width: calc(50% - 20px);
+  }
+
+   .footer-flex{
+    text-align: center;
+   }
+}
