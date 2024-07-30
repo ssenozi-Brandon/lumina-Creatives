@@ -32,6 +32,11 @@ img{
 .bg-primary{
   background: var(--primary-color);
 }
+.section-heading{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 /* container */
 .container{
@@ -129,9 +134,43 @@ img{
   margin: 0.2rem;
 }
 
+
+/* about page */
+/* services */
+.services{
+  background: #333;
+  color: #fff;
+  padding: 3rem 0 4rem;
+}
+.services-flex{
+  display: flex;
+  gap: 2rem;
+}
+.service-item h4{
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+
+/* team */
+.team{
+  padding: 3rem 0 4rem;
+}
+.team-flex{
+  display: flex;
+  gap: 1.4rem;
+}
+.team img{
+  border-radius: 10px;
+}
+
+
 /* media queries */
 @media (max-width:768px) {
-  .header-flex, .footer-flex{
+  .header .header-flex,
+  .footer .footer-flex, 
+  .services .services-flex,
+  .team .team-flex{
     flex-direction: column;
     gap: 1.5rem;
   }
