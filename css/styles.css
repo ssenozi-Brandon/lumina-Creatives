@@ -41,10 +41,32 @@ img{
 .bg-secondary .bg-primary{
   padding: 0 0.3rem;
 }
+.btn{
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.btn:hover{
+  background: #333;
+  color: #fff;
+}
 .section-heading{
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 40px;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* container */
@@ -171,6 +193,36 @@ img{
   border-radius: 10px;
 }
 
+/* contact */
+.contact{
+  padding: 3rem 0 4rem;
+}
+.contact p{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-group{
+  margin: 2rem 0;
+}
+.contact input,
+.contact textarea{
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+.contact input:focus,
+.contact textarea:focus{
+ outline: 0; 
+}
+.contact textarea{
+  height: 200px;
+}
+.contact button{
+  width: 100%;
+}
 
 /* media queries */
 @media (max-width:768px) {
