@@ -6,6 +6,7 @@
 
 :root{
 --primary-color: #fcf5e9;
+--bg-dark:#333;
 --container-normal:1100px;
 --container-wide:1400px;
 --container-narrow:900px;
@@ -31,6 +32,14 @@ img{
 /* utilities */
 .bg-primary{
   background: var(--primary-color);
+  color: #333;
+}
+.bg-secondary{
+  background: var(--bg-dark);
+  color: #fff;
+}
+.bg-secondary .bg-primary{
+  padding: 0 0.3rem;
 }
 .section-heading{
   font-size: 1.6rem;
@@ -138,8 +147,6 @@ img{
 /* about page */
 /* services */
 .services{
-  background: #333;
-  color: #fff;
   padding: 3rem 0 4rem;
 }
 .services-flex{
